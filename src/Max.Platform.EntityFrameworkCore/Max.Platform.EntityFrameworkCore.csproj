@@ -8,20 +8,14 @@
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="Migrations\20180726102624_Upgrade_ABP_380.cs" />
-    <Compile Remove="Migrations\20180927062408_test.cs" />
-    <Compile Remove="Migrations\20181114132110_InitialBookmark.cs" />
-    <Compile Remove="Migrations\20181115092602_UpdateBookmark.cs" />
-    <Compile Remove="Migrations\20181115100600_UpdateBookmark2.cs" />
-    <Compile Remove="Migrations\20181115101233_UpdateBookmark3.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.4" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.2" />
+    <PackageReference Include="pomelo.entityframeworkcore.mysql.design" Version="1.1.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Max.Platform.Core\Max.Platform.Core.csproj" />
