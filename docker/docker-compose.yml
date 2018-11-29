@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  maxplatformhost:
+    image: ${DOCKER_REGISTRY}maxplatformhost
+    build:
+      context: ../
+      dockerfile: src/Max.Platform.Web.Host/Dockerfile
