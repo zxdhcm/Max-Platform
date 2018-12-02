@@ -66,7 +66,7 @@ namespace Max.Platform.Authorization.Users
 
             user.SetNormalizedNames();
 
-            var defaultRole = await _roles.FirstOrDefaultAsync(r => r.IsDefault && r.Name == "Users");
+            var defaultRole = await _roles.FirstOrDefaultAsync(r => r.IsDefault && r.Name == "OrdinaryUsers");
             if (defaultRole != null)
             {
                 user.Roles.Add(new UserRole(tenant.Id, user.Id, defaultRole.Id));
