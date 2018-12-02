@@ -78,9 +78,9 @@ namespace Max.Platform.Bookmarks
         }
         #endregion
 
-        #region 判断网站ico url是否正确
+        #region 获取书签网站相关信息
         /// <summary>
-        /// 判断网站ico url是否正确
+        /// 获取书签网站相关信息 
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -89,13 +89,21 @@ namespace Max.Platform.Bookmarks
         {
             using (var httpClient = new HttpClient())
             {
-                var results = await httpClient.GetStringAsync(input.Url);
-                return new WebSiteInfoDto()
+                try
                 {
-                    FaviconUrl = GetFaviconUrl(input.Url, results),
-                    Title = GetTitle(results),
-                    Description = GetDescription(results)
-                };
+                    Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                    var results = await httpClient.GetStringAsync(input.Url);
+                    return new WebSiteInfoDto()
+                    {
+                        FaviconUrl = GetFaviconUrl(input.Url, results),
+                        Title = GetTitle(results),
+                        Description = GetDescription(results)
+                    };
+                }
+                catch (Exception e)
+                {
+                  return new WebSiteInfoDto() { FaviconUrl = "", Title = "", Description = "" };
+                }
             }
         }
         #endregion

@@ -11,7 +11,6 @@ using Abp.IdentityFramework;
 using Abp.Runtime.Caching;
 using Abp.Runtime.Session;
 using Abp.UI;
-using AutoMapper.QueryableExtensions;
 using Max.Platform.Authorization.Roles;
 using Max.Platform.MultiTenancy;
 

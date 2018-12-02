@@ -11,6 +11,9 @@
     <RootNamespace>Max.Platform</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Max.Platform.Core\Max.Platform.Core.csproj" />
   </ItemGroup>
 </Project>

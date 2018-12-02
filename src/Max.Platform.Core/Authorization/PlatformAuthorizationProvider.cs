@@ -13,6 +13,7 @@ namespace Max.Platform.Authorization
             context.CreatePermission(PermissionNames.Pages_Tenants, L("Tenants"), multiTenancySides: MultiTenancySides.Host);
             context.CreatePermission(PermissionNames.Pages_Accounts, L("Accounts"));
             context.CreatePermission(PermissionNames.Pages_Dashboards, L("Dashboards"));
+            context.CreatePermission(PermissionNames.Pages_Developments, L("Developments"));
         }
 
         private static ILocalizableString L(string name)

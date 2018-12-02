@@ -50,6 +50,7 @@
     <text name="Optional" value="Optional" />
     <text name="Accounts" value="Accounts" />
     <text name="Dashboards" value="Dashboards" />
+    <text name="Developments" value="Developments" />
     <text name="LeaveEmptyToSwitchToHost">Leave empty to switch to the host</text>
     <text name="CurrentTenant">Current tenant</text>
     <text name="NotSelected">Not selected</text>

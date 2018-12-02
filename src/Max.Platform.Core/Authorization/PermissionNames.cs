@@ -11,5 +11,7 @@
         public const string Pages_Accounts = "Pages.Accounts";
 
         public const string Pages_Dashboards = "Pages.Dashboards";
+
+        public const  string Pages_Developments = "Pages.Developments";
     }
 }
